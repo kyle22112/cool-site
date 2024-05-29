@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Required to Continue</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script>
+      const password = 'xadminx449';
+      let enteredPassword = prompt('Enter Password to Continue');
+      if (enteredPassword === password) {
+        window.location.href = 'home.html';
+      }
+      while (enteredPassword != password) {
+        let enteredPassword = prompt('Incorrect. Please try again.');
+        if (enteredPassword === password) {
+          window.location.href = 'home.html';
+        }
+      }
+    </script>
+  </body>
+</html>

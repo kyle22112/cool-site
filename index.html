@@ -14,19 +14,10 @@
       if (enteredPassword === password) {
         window.location.href = 'home.html';
       }
-      if (enteredPassword != password) {
-        enteredPassword = prompt('Incorrect. 2 attempts left.');
+      while (enteredPassword != password) {
+        let enteredPassword = prompt('Incorrect. Please try again.');
         if (enteredPassword === password) {
-          window.location.href  'home.html';
-        }
-        if (enteredPassword != password) {
-          enteredPassword = prompt('Incorrect. 1 attempt left.');
-          if (enteredPassword === password) {
-          window.location.href  'home.html';
-          }
-          if (enteredPassword != password) {
-            alert('Failed to enter password correctly.')
-          }
+          window.location.href = 'home.html';
         }
       }
     </script>
